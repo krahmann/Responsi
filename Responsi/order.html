@@ -37,42 +37,31 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div id="home">
-            <div class="overlay">
-                <div class="landing-text">
-                    <div align="center"><strong><font size="6" face="Courier New, Courier, mono">ORDER</font></strong></div>
-                    <form name="form1" method="POST" action="data.php">
-                        <table width="58%" border="0" align="center"><tr>
-                            <td>Nama</td>
-                            <td><input name="nama" type="text" id="nama"></td> </tr>
-                            <tr>
-                                <td>No. Antrian</td>
-                                <td><input name="antrian" type="text" id="antrian"></td>
-                            </tr>
-                            <tr>
-                            <tr>
-                                <td>Jadwal</td>
-                                <td><select name="jadwal" id="jadwal">
-                                    <option>==Pilih Jadwal==</option>
-                                    <option>Sore, Jam 16.00, Harga 20k</option>
-                                    <option>Malam, Jam 19.00, Harga 30k</option>
-                                </select></td>
-                            </tr>
-                            <tr>
-                                <td>Komentar</td>
-                                <td><textarea name="komentar" id="komentar"></textarea></td></tr>
-                                <tr>
-                                    <td>&nbsp;</td>
-                                    <td><input type="submit" name="Submit" value="Kirim"><input type="reset" 43.name="Submit2" value="Batal">
-                                    </td>
-                                </tr>
-                            </table>
-                        </form>
-                </div>
+        <main class="contact">
+        <h1>BOOKING</h1>
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <br><h2>Silahkan Order</h2>
+                    <h2>Untuk Penjadwalan</h2>
+                    <h2>Dan Antrian</h2>
+            </div>
+            <div class="flex-item-right">
+                <form action="">
+                    <input type="text" id="fname" placeholder="Masukkan Nama">
+                    <input type="text" name="antrian" id="antrian" placeholder="Antrian">
+                    <select name="jadwal" id="jadwal">
+                                    <option>Pilih Jadwal</option>
+                                    <option>Sore, Jam 16.00-18.00, Harga 20k</option>
+                                    <option>Malam, Jam 19.00-22.00, Harga 30k</option>
+                    <textarea name="" id="textarea" cols="30" rows="10" placeholder="Silahkan Tambahkan Pesan"></textarea>
+                    <button type="button" onClick="Terima Kasih Telah Mengorder">Order</button>
+                </form>
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <h3><span id="demo">&copy;</span><a href="#">Mannsbarbershop.com</a></h3>
+    </footer>
 </body>
 
 </html>
