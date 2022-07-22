@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mann's BarberShop</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         #home {
             background: url('img/andre-reis-1_DAlXy0wng-unsplash.jpg') no-repeat center center fixed;
@@ -14,6 +14,19 @@
             position: relative;
             width: 100%;
             background-size: cover;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #1e56a0;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -46,15 +59,15 @@
                     <h2>Dan Antrian</h2>
             </div>
             <div class="flex-item-right">
-                <form action="">
-                    <input type="text" id="fname" placeholder="Masukkan Nama">
+                <form name="form1" method="POST" action="data.php">
+                    <input type="text" name="nam" id="nam" placeholder="Masukkan Nama">
                     <input type="text" name="antrian" id="antrian" placeholder="Antrian">
                     <select name="jadwal" id="jadwal">
                                     <option>Pilih Jadwal</option>
                                     <option>Sore, Jam 16.00-18.00, Harga 20k</option>
                                     <option>Malam, Jam 19.00-22.00, Harga 30k</option>
-                    <textarea name="" id="textarea" cols="30" rows="10" placeholder="Silahkan Tambahkan Pesan"></textarea>
-                    <button type="button" onClick="Terima Kasih Telah Mengorder">Order</button>
+                    <textarea name="pesan" id="textarea" cols="30" rows="10" placeholder="Silahkan Tambahkan Pesan"></textarea>
+                    <input type="submit" value="Order">
                 </form>
             </div>
         </div>
