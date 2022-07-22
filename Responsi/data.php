@@ -10,7 +10,7 @@
     <?php
 	echo "<head><title>Daftar Antrian</title></head>";
 	$fp = fopen("order.txt","a+");
-	$nam= $_POST['nam'];           
+	$nam = $_POST['nam'];           
 	$antrian = $_POST['antrian'];	   
 	$jadwal = $_POST['jadwal'];
 	$pesan = $_POST['pesan'];
